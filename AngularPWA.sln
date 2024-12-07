@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularPWA.Server", "AngularPWA.Server\AngularPWA.Server.csproj", "{4A7DE722-4530-4260-BFBE-2D6D0C0CD7A8}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "angularpwa.client", "angularpwa.client\angularpwa.client.esproj", "{60149F9A-8113-48E8-B87D-751C0DDF1948}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SendServer", "SendServer\SendServer.csproj", "{52C411F4-CA75-426F-B1BB-E7EE27E67D04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A7DE722-4530-4260-BFBE-2D6D0C0CD7A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A7DE722-4530-4260-BFBE-2D6D0C0CD7A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A7DE722-4530-4260-BFBE-2D6D0C0CD7A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A7DE722-4530-4260-BFBE-2D6D0C0CD7A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60149F9A-8113-48E8-B87D-751C0DDF1948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60149F9A-8113-48E8-B87D-751C0DDF1948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60149F9A-8113-48E8-B87D-751C0DDF1948}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{60149F9A-8113-48E8-B87D-751C0DDF1948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60149F9A-8113-48E8-B87D-751C0DDF1948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60149F9A-8113-48E8-B87D-751C0DDF1948}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{52C411F4-CA75-426F-B1BB-E7EE27E67D04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C411F4-CA75-426F-B1BB-E7EE27E67D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C411F4-CA75-426F-B1BB-E7EE27E67D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C411F4-CA75-426F-B1BB-E7EE27E67D04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3B86DE5-A7CE-4809-9BE5-D8B8C1185757}
+	EndGlobalSection
+EndGlobal

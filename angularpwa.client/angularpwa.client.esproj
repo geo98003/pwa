@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.271090-alpha">
+  <PropertyGroup>
+    <StartupCommand>npm start</StartupCommand>
+    <JavaScriptTestFramework>Jasmine</JavaScriptTestFramework>
+    <!-- Allows the build (or compile) script located on package.json to run on Build -->
+    <ShouldRunBuildScript>true</ShouldRunBuildScript>
+    <!-- Folder where production build objects will be placed -->
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\..\AngularPWA.Server\wwwroot\</BuildOutputFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="src\ngsw-worker.js" />
+  </ItemGroup>
+  <!--<ItemGroup>
+    <None Remove="src\images\kitchen.png" />
+    <None Remove="src\pwa.webmanifest" />
+  </ItemGroup>-->
+  <ItemGroup>
+    <Folder Include="dist\" />
+    <Folder Include="src\app\barcode\" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--<Content Include="$(MSBuildProjectDirectory)\src\images\kitchen.png" CopyToOutputDirectory="Always" TargetPath="browser\images\kitchen.png" />
+    <Content Include="$(MSBuildProjectDirectory)\src\pwa.webmanifest" CopyToOutputDirectory="Always" TargetPath="browser\pwa.webmanifest" />
+    <Content Include="$(MSBuildProjectDirectory)\src\ngsw-worker.js" CopyToOutputDirectory="Always" TargetPath="browser\ngsw-worker.js" />-->
+    <Content Include="$(MSBuildProjectDirectory)\src\images\kitchen.png" CopyToOutputDirectory="Always" TargetPath="publish\wwwroot\browser\images\kitchen.png" />
+    <Content Include="$(MSBuildProjectDirectory)\src\pwa.webmanifest" CopyToOutputDirectory="Always" TargetPath="publish\wwwroot\browser\pwa.webmanifest" />
+    <Content Include="$(MSBuildProjectDirectory)\src\ngsw-worker.js" CopyToOutputDirectory="Always" TargetPath="publish\wwwroot\browser\ngsw-worker.js" />
+    <!--<TypeScriptConfiguration Include="src\images\kitchen.png" />
+    <TypeScriptConfiguration Include="src\pwa.webmanifest" />-->
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptConfiguration Include="src\ngsw-worker.js" />
+  </ItemGroup>
+</Project>

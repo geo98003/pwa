@@ -1,0 +1,6 @@
+@AngularPWA.Server_HostAddress = http://localhost:5057
+
+GET {{AngularPWA.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
